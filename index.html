@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <header>
-    <h1>
-      <a href="/game-logo">
+  <header class="bd-header">
+    <h1 class="heading1">
+      <a href="/game-logo" class="sos-logo">
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect x="0.0834961" y="0.839783" width="32.9644" height="32.9644" fill="url(#pattern0)" />
@@ -25,36 +25,36 @@
         </svg>
       </a>
     </h1>
-    <nav>
-      <ul>
-        <li><a href="#">Main</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Game features</a></li>
-        <li><a href="">System requirements</a></li>
-        <li><a href="">Qoutes</a></li>
+    <nav class="navigation navigation-menu">
+      <ul class="list list-menu">
+        <li class="items item-main"><a href="#">Main</a></li>
+        <li class="items item-about"><a href="">About</a></li>
+        <li class="items item-feature"><a href="">Game features</a></li>
+        <li class="items item-system"><a href="">System requirements</a></li>
+        <li class="items item-qoutes"><a href="">Qoutes</a></li>
       </ul>
     </nav>
-    <div>
+    <section class="dropdown">
       <select name="dropdown-menu" id="dropdown-menu">
         <option value="ENG">ENG</option>
         <option value="RUS">RUS</option>
         <option value="FRA">FRA</option>
         <option value="DEU">DEU</option>
       </select>
-    </div>
-    <main>
+    </section>
+    <main class="container">
       <header class="masthead">
-        <h2>Survive at all costs</h2>
+        <h2 class="heading2">Survive at all costs</h2>
         <p>Exprience new battle royale game</p>
-        <a href="">Buy now on steam │ $14.99</a>
+        <a href="/buy-steam">Buy now on steam │ $14.99</a>
         <span>The story</span>
       </header>
-      <article>
-        <header>
-          <h2>What is sos?</h2>
+      <article class="sub-container sub_container__description">
+        <header class="sub_container__description__header">
+          <h2 class="heading2 sub_container__description__heading">What is sos?</h2>
+          <p class="title">Sociale battle royale game</p>
         </header>
-        <div>
-          <p>Sociale battle royale game</p>
+        <div class="sub_container__description--contents">
           <p>Each round, you and <b>15</b> other contestants compete to
             escape a deadly island filled with monsters. The trick is: <b>three</b> people can survive. Will you run
             solo or form friendships with others to escape?
@@ -64,31 +64,31 @@
             difference between life and death.</p>
         </div>
       </article>
-      <article>
-        <header>
-          <h2>What's so special</h2>
-          <p>Features</p>
+      <article class="sub_container sub_container__features">
+        <header class="sub_container__features__header">
+          <h2 class="heading2 sub_container__features__heading2">What's so special</h2>
+          <p class="title">Features</p>
         </header>
-        <ul>
-          <li>
-            <details>
-              <summary>Survive at all costs</summary>
+        <ul class="list sub_container__features__list">
+          <li class="items sub_container__features__items">
+            <details class="details">
+              <summary class="summary">Survive at all costs</summary>
               <p>You have 30 minutes to find a relic, signal for extraction, and grab
                 one of three spots on the rescue chopper.
               </p>
             </details>
           </li>
-          <li>
-            <details>
-              <summary>Create allies and enemies</summary>
+          <li class="items sub_container__features__items">
+            <details class="class="details"">
+              <summary class="summary">Create allies and enemies</summary>
               <p>You have 30 minutes to find a relic, signal for extraction, and grab
                 one of three spots on the rescue chopper.
               </p>
             </details>
           </li>
-          <li>
-            <details>
-              <summary>Impress the audience</summary>
+          <li class="items sub_container__features__items">
+            <details class="class="details"">
+              <summary class="summary">Impress the audience</summary>
               <p>You have 30 minutes to find a relic, signal for extraction, and grab
                 one of three spots on the rescue chopper.
               </p>
@@ -96,54 +96,55 @@
           </li>
         </ul>
       </article>
-      <article>
-        <header>
-          <h2>Can my computer run this game</h2>
-          <p>System requirement</p>
+      <article class="sub_container sub_container--usebility">
+        <header class="sub_container--usebility__header">
+          <h2 class="heading2 sub_container--usebility__heading2">Can my computer run this game</h2>
+          <p class="title">System requirement</p>
         </header>
-        <ul>
-          <li>
-            <span><a href="/ds">DS:</a></span>
-            <p>
+        <ul class="list sub_container--usebility__list">
+          <li class="items sub_container--usebility__items">
+            <span class="sub_container--usebility--subtitle"><a class="sub_container--usebility__links" href="/ds">DS:</a></span>
+            <span class="sub_container--usebility--desc">
               Windows 7 64-bit only
               (No OSX support at this time)
-            </p>
+            </span>
           </li>
-          <li>
-            <span><a href="/process">Process</a></span>
-            <span>
+          <li class="items sub_container--usebility__items">
+            <span class="sub_container--usebility--subtitle"><a class="sub_container--usebility__links" href="/process">Process</a></span>
+            <span class="sub_container--usebility--desc">
               Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
             </span>
           </li>
-          <li>
-            <span><a href="/memory">Memory</a></span>
-            <span>8 gb ram</span>
+          <li class="items sub_container--usebility__items">
+            <span class="sub_container--usebility--subtitle"><a class="sub_container--usebility__links" href="/memory">Memory</a></span>
+            <span class="sub_container--usebility--desc">8 gb ram</span>
           </li>
-          <li>
-            <span><a href="/storage">Storage</a></span>
-            <span>8 GB available space</span>
+          <li class="items sub_container--usebility__items">
+            <span class="sub_container--usebility--subtitle"><a class="sub_container--usebility__links" href="/storage">Storage</a></span>
+            <span class="sub_container--usebility--desc">8 GB available space</span>
           </li>
-          <li>
-            <span><a href="/graphic">Graphics></a></span>
-            <span>NVIDIA GeForce GTX 660 2GB or
+          <li class="items sub_container--usebility__items">
+            <span class="sub_container--usebility--subtitle"><a class="sub_container--usebilitys" href="/graphic">Graphics></a></span>
+            <span class="sub_container--usebility--desc">NVIDIA GeForce GTX 660 2GB or
               AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
             </span>
           </li>
         </ul>
       </article>
-      <article>
-        <header>
-          <h2>What people think</h2>
-          <p>Press quotes</p>
+      <article class="sub_container sub_container--comment">
+        <header class="sub_container--comment__header">
+          <h2 class="heading2 sub_container--comment__heading2">What people think</h2>
+          <p class="title">Press quotes</p>
           <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why
             we’re constantly working on our services to make it better every day and really listen to what our users has
             to say.</p>
-          <button>Read more testimonials</button>
+          <a href="/read-more">Read more testimonials</a></p>
         </header>
-        <section>
-          <section>
-            <header>
-              <h3><a href="/evan-lahti">Evan lathi</a></h3>
+        <section class="sub_container--comment--features">
+          <section class="sub_container--comment--feature">
+            <header class="sub_container--comment--feature__header">
+              <h3 class="sub_container--comment--feature__heading3">
+                <a href="/evan-lahti" class="sub_container--comment--feature-link">Evan lathi</a></h3>
               <span>Pc gamer</span>
             </header>
             <p>
@@ -151,11 +152,11 @@
             </p>
             <span>October, 18 2018</span>
           </section>
-          <section>
-            <header>
-              <h3><a href="/Jada-griffin">Jada Griffin</a></h3>
-              <span>Nerdreactor
-              </span>
+          <section class="sub_container--comment--feature">
+            <header class="sub_container--comment--feature__header">
+              <h3 class="sub_container--comment--feature__heading3">
+                <a href="/Jada-griffin" class="sub_container--comment--feature-link">Jada Griffin</a></h3>
+              <span>Nerdreacton</span>
             </header>
             <p>
               <q>The next big thing in the world of streaming and survival games.
@@ -163,9 +164,10 @@
             </p>
             <span>December 21, 2018</span>
           </section>
-          <section>
-            <header>
-              <h3><a href="/aaron-williams">Aaron Williams </a></h3>
+          <section class="sub_container--comment--feature">
+            <header class="sub_container--comment--feature__header">
+              <h3 class="sub_container--comment--feature__heading3">
+                <a href="/aaron-willi ams" class="sub_container--comment--feature-link">Aaron Williams </a></h3>
             </header>
             <p>
               <q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q>
@@ -174,26 +176,26 @@
           </section>
         </section>
       </article>
-      <article>
-        <header>
-          <h2>Want to stay in touch?</h2>
-          <p>newsletter SUBSCRIBE </p>
+      <article class="sub_container sub_container--caling">
+        <header class="sub_container--caling__header">
+          <h2 class="heading2 sub_container--caling__heading2">Want to stay in touch?</h2>
+          <p class="title">newsletter subcribe </p>
           <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will
             be
             taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
         </header>
-        <div>
-          <label for="email">Your email address
-            <input type="email" id="email" value="aliciliniavopir@gmail.com">
+        <div class="sub_container--caling--approching">
+          <label for="email" class="sub_container--caling__label">Your email address
+            <input type="email" id="email" value="aliciliniavopir@gmail.com" class="sub_container--caling__input">
           </label>
-          <a href="/subcribe">subcribe now</a>
+          <button class="sub_container--caling__btn">subcribe now</button>
         </div>
       </article>
     </main>
-    <footer>
-      <h2>
-        <a href="">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"
+    <footer class="sub_container__footer">
+      <h2 class="heading2 sub_container__footer__heading">
+        <a href="/sos-log" class="sub_container__footer--link">
+          <svg class="sub_container__footer__svg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect x="0.0834961" y="0.839783" width="32.9644" height="32.9644" fill="url(#pattern0)" />
             <defs>
@@ -206,29 +208,29 @@
           </svg>
         </a>
       </h2>
-      <nav>
-        <ul>
-          <li><a href="/main">Main</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/game-features">Game features</a></li>
-          <li><a href="/system-requirement">System Requirement</a></li>
-          <li><a href="/quotes">Quotes</a></li>
+      <nav class="navigation sub_container__footer__nav">
+        <ul class="list sub_container__footer__list">
+          <li class="items sub_container__footer__items"><a class="sub_container__footer--links" href="/main">Main</a></li>
+          <li class="items sub_container__footer__items"><a class="sub_container__footer--links" href="/about">About</a></li>
+          <li class="items sub_container__footer__items"><a class="sub_container__footer--links" href="/game-features">Game features</a></li>
+          <li class="items sub_container__footer__items"><a class="sub_container__footer--links" href="/system-requirement">System Requirement</a></li>
+          <li class="items sub_container__footer__items"><a class="sub_container__footer--links" href="/quotes">Quotes</a></li>
         </ul>
       </nav>
-      <nav>
-        <ul>
-          <li><a href="/facebook">facebook</a></li>
-          <li><a href="/twitter">twitter</a></li>
-          <li><a href="/play-video">Video</a></li>
-          <li><a href="twitch">twitch</a></li>
+      <nav class="navigation sub_container__footer--icons">
+        <ul class="list sub_container__footer__list--icons">
+          <li class="items sub_container__footer__items--icons"><a class="sub_container__footer--links--icons" href="/facebook">facebook</a></li>
+          <li class="items sub_container__footer__items--icons"><a class="sub_container__footer--links--icons" href="/twitter">twitter</a></li>
+          <li class="items sub_container__footer__items--icons"><a class="sub_container__footer--links--icons" href="/play-video">Video</a></li>
+          <li class="items sub_container__footer__items--icons"><a class="sub_container__footer--links--icons" href="twitch">twitch</a></li>
         </ul>
       </nav>
       <span>© 2018 Outpost Games, Inc. All Rights Reserved</span>
-      <nav>
-        <ul>
-          <li><a href="/privacy-policy">Privacy policy</a></li>
-          <li><a href="/terms-of-services">│ Terms of services │</a></li>
-          <li><a href="/code-of-conduct">Code of conduct</a></li>
+      <nav class="navigation sub_container__footer--rule">
+        <ul class="list sub_container__footer--rule__list">
+          <li class="items sub_container__footer--rule__items"><a class="sub_container__footer--rule--links" href="/privacy-policy">Privacy policy</a></li>
+          <li class="items sub_container__footer--rule__items"><a class="sub_container__footer--rule--links" href="/terms-of-services">│ Terms of services │</a></li>
+          <li class="items sub_container__footer--rule__items"><a class="sub_container__footer--rule--links" href="/code-of-conduct">Code of conduct</a></li>
         </ul>
       </nav>
     </footer>
