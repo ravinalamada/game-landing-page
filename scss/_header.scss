@@ -1,0 +1,37 @@
+.bd-header {
+  width: 100%;
+  position: absolute;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  color:transparent;
+  background-image: url(../image/menu-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+}
+
+.heading1 {
+  margin-inline-start: 15px;
+}
+
+.masthead-icon {
+  opacity: 0.5;
+  color: #FFFFFF;
+}
+
+
+

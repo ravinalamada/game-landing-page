@@ -1,0 +1,25 @@
+@import "variables";
+
+.masthead {
+  background-image: url(../image/main-bg.png);
+  background-repeat: no-repeat;
+  // background-position: 0;
+  background-size: 100%;
+}
+
+.masthead--container {
+  padding-block-start: 228.5px;
+}
+
+.masthead-show-more {
+  @include normal-white-font;
+  padding-block-start: 189px;
+}
+
+.market--link {
+  @include normal-black-font;
+}
+
+// .masthead--link {
+//   padding-block-end: 269.8px;
+// }

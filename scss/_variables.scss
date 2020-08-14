@@ -1,0 +1,45 @@
+@import "variable/colors";
+
+$bd-bg: $bd-bg;
+$white-color: $white;
+$yellow-color: $yellow;
+$black-color: $black;
+
+@mixin bolded-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 33px;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+@mixin meduim-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 18px;
+  color: $white-color;
+}
+
+@mixin normal-white-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: $white-color;
+}
+
+@mixin normal-black-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: $black;
+  background-color: $yellow-color;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+@mixin normal-yellow-font {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  color: $yellow-color;
+}
+
+
+
+

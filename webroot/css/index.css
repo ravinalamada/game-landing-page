@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  src: local(Open Sans) url(../fonts/font-open-sans-bold.woff2) format(woff2), url(../fonts/font-open-sans-bold.woff) format(woff);
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-style: normal;
+  src: local(Open Sans) url(../fonts/font-open-sans-regular.woff2) format(woff2) url(../fonts/font-open-sans-regular.woff2) format(woff);
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("BebasNeue-Regular.woff2") format("woff2"), url("BebasNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #E5E5E5;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+.container__description {
+  background-image: url(../image/bg-fith-art.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%; }
+
+.title,
+.heading2 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 18px;
+  color: white; }
+
+.masthead__heading2,
+.masthead--title {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 33px;
+  color: white;
+  text-transform: uppercase; }
+
+.sub_container__description__header {
+  padding-block-start: 48.99px; }
+
+.desc {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.list {
+  list-style: none; }
+
+.items {
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+.navigation-menu {
+  display: none; }
+
+.masthead {
+  background-image: url(../image/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.masthead--container {
+  padding-block-start: 228.5px; }
+
+.masthead-show-more {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  padding-block-start: 189px; }
+
+.market--link {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: #1A1917;
+  background-color: #FFB548;
+  border-radius: 4px;
+  padding: 16px; }
+
+.bd-header {
+  width: 100%;
+  position: absolute; }
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.menu {
+  color: transparent;
+  background-image: url(../image/menu-icon.svg);
+  background-repeat: no-repeat; }
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center; }
+
+.heading1 {
+  margin-inline-start: 15px; }
+
+.masthead-icon {
+  opacity: 0.5;
+  color: #FFFFFF; }
