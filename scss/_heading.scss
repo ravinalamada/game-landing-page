@@ -3,7 +3,15 @@
   @include meduim-font;
 }
 
-.masthead__heading2,
+.heading2 {
+  margin: 0;
+}
+
+.masthead__heading2 {
+  @include bolded-font;
+  padding-block-start: 228.5px;
+}
+
 .masthead--title {
   @include bolded-font;
 }
@@ -11,6 +19,8 @@
 .sub_container__description__header {
   padding-block-start: 48.99px;
 }
+
+
 
 .desc {
   @include normal-white-font;
