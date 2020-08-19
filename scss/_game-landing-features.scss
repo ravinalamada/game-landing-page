@@ -1,0 +1,19 @@
+.game_landing--features {
+  background-image: url(../image/desk-bg-features.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 166% 50%;
+  background-color: black;
+}
+
+.sub_container__features__header {
+  padding-block-start: 82.04px;
+}
+
+.sub_container__features__items {
+  @include normal-yellow-font;
+}
+
+.sub_container__features__list {
+  padding-block-end: 85.81px;
+}

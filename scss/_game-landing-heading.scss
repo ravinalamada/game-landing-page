@@ -1,0 +1,22 @@
+.title,
+.heading2 {
+  @include meduim-font;
+}
+
+.heading2 {
+  margin: 0;
+}
+
+.masthead__heading2 {
+  @include bolded-font;
+  padding-block-start: 228.5px;
+}
+
+.masthead--title {
+  @include bolded-font;
+}
+
+.desc {
+  @include normal-white-font;
+}
+

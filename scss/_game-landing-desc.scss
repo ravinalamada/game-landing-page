@@ -1,0 +1,53 @@
+.game_landing--description {
+  background-image: url(../image/desk-bg-desc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.sub_container__description__header {
+  padding-block-start: 48.99px;
+  padding-inline-start: 13.81px;
+  text-align: justify;
+  border-bottom: 1px white solid;
+}
+
+.sub_container__description--contents {
+  padding-block-start: 16px;
+}
+
+.image-conatainer {
+  padding-inline-start: 37px;
+  padding-inline-end: 37px;
+  position: relative;
+  padding-block-start: 113%;
+}
+
+.figure-third {
+  position: absolute;
+  top: 72.88px;
+  left: 88.25px;
+  margin: 0;
+}
+
+.figure-secondary {
+  position: absolute;
+  top: 60.97px;
+  left: 78.44px;
+  margin: 0;
+  z-index: 2;
+}
+
+.figure-primary {
+  position: absolute;
+  top: 51.71px;
+  left: 37.79px;
+  margin: 0;
+  z-index: 3;
+}
+
+img {
+  width: 100%;
+}
+
+

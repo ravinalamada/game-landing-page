@@ -27,10 +27,48 @@ main {
   flex-direction: column; }
 
 .game_landing--description {
-  background-image: url(../image/bg-fith-art.png);
+  background-image: url(../image/desk-bg-desc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%; }
+
+.sub_container__description__header {
+  padding-block-start: 48.99px;
+  padding-inline-start: 13.81px;
+  text-align: justify;
+  border-bottom: 1px white solid; }
+
+.sub_container__description--contents {
+  padding-block-start: 16px; }
+
+.image-conatainer {
+  padding-inline-start: 37px;
+  padding-inline-end: 37px;
+  position: relative;
+  padding-block-start: 113%; }
+
+.figure-third {
+  position: absolute;
+  top: 72.88px;
+  left: 88.25px;
+  margin: 0; }
+
+.figure-secondary {
+  position: absolute;
+  top: 60.97px;
+  left: 78.44px;
+  margin: 0;
+  z-index: 2; }
+
+.figure-primary {
+  position: absolute;
+  top: 51.71px;
+  left: 37.79px;
+  margin: 0;
+  z-index: 3; }
+
+img {
+  width: 100%; }
 
 .title,
 .heading2 {
@@ -54,9 +92,6 @@ main {
   color: white;
   text-transform: uppercase; }
 
-.sub_container__description__header {
-  padding-block-start: 48.99px; }
-
 .desc {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
@@ -75,7 +110,7 @@ a {
   display: none; }
 
 .masthead {
-  background-image: url(../image/main-bg.png);
+  background-image: url(../image/bg-masthead-sm.png);
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -134,13 +169,23 @@ a {
   color: #FFFFFF; }
 
 .game_landing--features {
-  background-image: url(../image/bg-secondary.png);
+  background-image: url(../image/desk-bg-features.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 166% 50%;
+  background-color: black; }
 
-.sub_container__description__heading2 {
-  padding-block-end: 33.99px; }
+.sub_container__features__header {
+  padding-block-start: 82.04px; }
+
+.sub_container__features__items {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  color: #FFB548; }
+
+.sub_container__features__list {
+  padding-block-end: 85.81px; }
 
 .game_landing--requirements {
   background-image: url(../image/bg-third-art.png);
@@ -148,14 +193,55 @@ a {
   background-size: cover;
   background-position: 50% 50%; }
 
+.sub_container--usebility__heading2 {
+  padding-block-start: 65.51px; }
+
+.sub_container--usebility__links {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  color: #FFB548; }
+
+.sub_container--usebility__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px gray solid;
+  margin-inline-start: 11px;
+  margin-inline-end: 19px;
+  padding-inline-start: 0; }
+
+.sub_container--usebility__items {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-block-start: 9px;
+  padding-inline-start: 9px;
+  padding-inline-end: 9px; }
+
+.sub_container--usebility__items:nth-of-type(1),
+.sub_container--usebility__items:nth-of-type(3) {
+  border-inline-end: 1px gray solid;
+  padding-inline-end: 10.17px; }
+
+.sub_container--usebility__items:nth-of-type(3),
+.sub_container--usebility__items:nth-of-type(4) {
+  border-block-end: 1px gray solid;
+  padding-block-end: 9px; }
+
+.sub_container--usebility--desc {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: white; }
+
 .game_landing--messages {
-  background-image: url(../image/bg-forth-art.png);
+  background-color: black; }
+
+.game-landing--newsletter {
+  background-color: black;
+  background-image: url(../image/bg-newsletter.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
 
-.game-landing--newsletter {
-  background-image: url(../image/bg-fith-art.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%; }
+footer {
+  background-color: black; }

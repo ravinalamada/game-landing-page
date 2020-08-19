@@ -1,0 +1,50 @@
+.game_landing--requirements {
+  background-image: url(../image/bg-third-art.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.sub_container--usebility__heading2 {
+  padding-block-start: 65.51px;
+}
+.sub_container--usebility__links {
+  @include normal-yellow-font;
+}
+
+.sub_container--usebility__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // column-gap: 22.17px;
+  // row-gap: 22.17px;
+  border: 1px gray solid;
+  margin-inline-start: 11px;
+  margin-inline-end: 19px;
+  padding-inline-start: 0;
+}
+
+.sub_container--usebility__items {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-block-start: 9px;
+  padding-inline-start: 9px;
+  padding-inline-end: 9px;
+}
+
+.sub_container--usebility__items:nth-of-type(1),
+.sub_container--usebility__items:nth-of-type(3) {
+  border-inline-end: 1px gray solid;
+  padding-inline-end: 10.17px;
+}
+
+.sub_container--usebility__items:nth-of-type(3),
+.sub_container--usebility__items:nth-of-type(4) {
+  border-block-end: 1px gray solid;
+  padding-block-end: 9px;
+
+}
+
+.sub_container--usebility--desc {
+  @include normal-white-font;
+}
