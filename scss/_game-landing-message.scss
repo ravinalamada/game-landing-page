@@ -1,5 +1,87 @@
 .game_landing--messages {
   background-color: black;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.market--link {
+  @include normal-black-font;
+  font-weight: bold;
+}
+.message--feature-link {
+  @include normal-yellow-font;
+}
+
+.message__header {
+  text-align: justify;
+}
+
+.message__heading2 {
+  padding-block-start: 40.03px;
+}
+
+.market-desc {
+  margin-block-start: 40.13px;
+  text-align: center;
+}
+.message--features {
+  display: flex;
+  flex-direction: column;
+}
+
+.message--feature__heading3 {
+  margin: 0;
+}
+
+
+.message--feature__heading3--prim::before {
+  content: url(../image/first-profile.svg);
+  position: relative;
+  top: 1.5rem;
+}
+
+.message--feature__heading3--sec::before {
+  content: url(../image/secondary-profile.svg);
+  position: relative;
+  top: 1.5rem;
+}
+
+.message--feature__heading3--third::before {
+  content: url(../image/third-profile.svg);
+  position: relative;
+  top: 1.5rem;
+}
+
+.message--feature {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding-block-end: 16px;
+  text-align: justify;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+}
+
+.message--feature:nth-of-type(1) {
+  margin-block-start: 30.13px;
+}
+
+.message--feature:nth-of-type(2),
+.message--feature:nth-of-type(3) {
+  margin-block-start: 20.39px;
+}
+
+.message__span {
+  @include normal-white-font;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.message__span--header {
+  padding-inline-start: 46px;
+}
+
+.message--feature:nth-of-type(3) {
+  margin-block-end: 46.98px;
 }
 
 

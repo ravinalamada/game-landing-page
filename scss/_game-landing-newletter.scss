@@ -6,3 +6,31 @@
   background-position: 50% 50%;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff14;
+  border-radius: 3px;
+  align-items: center;
+  margin-inline-start: 16px;
+  margin-inline-end: 16px;
+  margin-block-end: 20.48px;
+}
+
+.sub_container--caling__input {
+  @include normal-yellow-font;
+  font-size: 14px;
+  // background: rgba(255, 255, 255, 0.08);
+  background-color: transparent;
+  outline: none;
+  border-color: transparent;
+}
+
+.sub_container--caling__btn {
+  @include normal-black-font;
+  font-weight: bold;
+  outline: none;
+  border-color: transparent;
+  padding-inline-start: 80px;
+  padding-inline-end: 90px;
+}
