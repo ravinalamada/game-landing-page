@@ -1,3 +1,32 @@
 footer {
   background-color: black;
 }
+
+.sub_container__footer--links{
+  @include bolded-font;
+  font-size: 12px;
+}
+
+.sub_container__footer--links--icons {
+  display: block;
+  text-indent: -9999px;
+}
+.sub_container__footer--links--icons:nth-of-type(1){
+  background-image: url(../image/facebook-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.sub_container__footer--links--icons:nth-of-type(2){
+  background-image: url(../image/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+.sub_container__footer--links--icons:nth-of-type(3){
+  background-image: url(../image/video-icon.svg);
+  background-repeat: no-repeat;
+}
+
+.sub_container__footer--links--icons:nth-of-type(4){
+  background-image: url(../image/message-icon.svg);
+  background-repeat: no-repeat;
+}

@@ -1,9 +1,21 @@
 .game-landing--newsletter {
   background-color: black;
-  background-image: url(../image/bg-newsletter.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  // background-image: url(../webroot/image/);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 50% 50%;
+}
+
+.newsletter__header {
+  text-align: justify;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.newsletter--content {
+  margin-block-start: 24px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
 }
 
 .input-container {
@@ -11,26 +23,46 @@
   flex-direction: column;
   background: #ffffff14;
   border-radius: 3px;
-  align-items: center;
+  align-items: justify;
   margin-inline-start: 16px;
   margin-inline-end: 16px;
+  margin-block-start: 16px;
   margin-block-end: 20.48px;
+  padding-inline-start: 16px;
 }
 
-.sub_container--caling__input {
+.newsletter__input {
   @include normal-yellow-font;
   font-size: 14px;
-  // background: rgba(255, 255, 255, 0.08);
   background-color: transparent;
   outline: none;
   border-color: transparent;
+  width: 100%;
 }
 
-.sub_container--caling__btn {
+.newsletter__label {
+  @include normal-white-font;
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: justify;
+}
+
+// .newsletter--img {
+//   width: 162px;
+//   height: 316px;
+// }
+
+.newsletter--figure {
+  margin: 0;
+}
+
+.newsletter__btn {
   @include normal-black-font;
   font-weight: bold;
   outline: none;
   border-color: transparent;
-  padding-inline-start: 80px;
-  padding-inline-end: 90px;
+  // padding-inline-start: 80px;
+  // padding-inline-end: 90px;
+  margin-block-end: 91.1px;
+  width: 90%;
 }
