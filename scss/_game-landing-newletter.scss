@@ -1,9 +1,11 @@
 .game-landing--newsletter {
   background-color: black;
-  // background-image: url(../webroot/image/);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: 50% 50%;
+}
+
+.newsletter--approching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsletter__header {
@@ -24,11 +26,10 @@
   background: #ffffff14;
   border-radius: 3px;
   align-items: justify;
-  margin-inline-start: 16px;
-  margin-inline-end: 16px;
   margin-block-start: 16px;
   margin-block-end: 20.48px;
   padding-inline-start: 16px;
+  width: calc(290px - 16px);
 }
 
 .newsletter__input {
@@ -37,7 +38,6 @@
   background-color: transparent;
   outline: none;
   border-color: transparent;
-  width: 100%;
 }
 
 .newsletter__label {
@@ -46,11 +46,6 @@
   opacity: 0.5;
   text-align: justify;
 }
-
-// .newsletter--img {
-//   width: 162px;
-//   height: 316px;
-// }
 
 .newsletter--figure {
   margin: 0;
@@ -61,8 +56,22 @@
   font-weight: bold;
   outline: none;
   border-color: transparent;
-  // padding-inline-start: 80px;
-  // padding-inline-end: 90px;
   margin-block-end: 91.1px;
-  width: 90%;
+  width: 290px;
+}
+
+@media(min-width:1000px) {
+  .newsletter--approching {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .input-container {
+    padding-block-start: 8px;
+    padding-block-end: 8px;
+    margin: 0;
+    margin-inline-end: 16px;
+  }
 }
