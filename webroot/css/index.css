@@ -30,6 +30,12 @@ main {
   padding: 0;
   margin: 0; }
 
+@media (min-width: 800px) {
+  .container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; } }
+
 .game_landing--description {
   background-image: url(../image/desk-bg-desc.png);
   background-repeat: no-repeat;
@@ -420,6 +426,10 @@ a {
 footer {
   background-color: black; }
 
+.footer-container {
+  border-block-end: 1px gray solid;
+  margin-block-end: 22px; }
+
 .sub_container__footer--links {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 33px;
@@ -432,9 +442,7 @@ footer {
   font-size: 14px;
   color: white;
   font-size: 12px;
-  opacity: 0.5;
-  border-block-start: 1px gray solid;
-  padding-block-start: 16px; }
+  opacity: 0.5; }
 
 .sub_container__footer__nav {
   display: flex;
@@ -501,6 +509,19 @@ footer {
     justify-content: space-between;
     align-items: baseline; }
   .sub_container__footer__list {
+    width: 500px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between; }
+  .footer-span {
+    display: flex; }
+  .sub_container__footer--rule {
+    margin-block-start: -36px;
+    display: flex;
+    justify-content: flex-end; }
+  .sub_container__footer--rule__list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 300px;
     justify-content: space-between; } }
