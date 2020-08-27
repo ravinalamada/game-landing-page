@@ -303,7 +303,18 @@ a {
 .message__heading2 {
   padding-block-start: 40.03px; }
 
-.market-desc {
+.game_landing--message__title {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase; }
+
+.game_landing--messages--desc {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.game_landing--messages--desc {
   margin-block-start: 40.13px;
   text-align: center; }
 
@@ -360,6 +371,30 @@ a {
 
 .message--feature:nth-of-type(3) {
   margin-block-end: 46.98px; }
+
+@media (min-width: 1000px) {
+  .game_landing--messages--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: flex; }
+  .message__header {
+    margin-block-start: 227px; }
+  .game_landing--message__title {
+    margin-block-start: 0;
+    margin-block-end: 0; }
+  .game_landing--messages--desc {
+    width: 65%;
+    text-align: justify;
+    margin-block-end: 75px; }
+  .game_landing--messages--read-more {
+    text-align: justify; }
+  .message--feature:nth-of-type(1) {
+    margin-block-start: 160px; }
+  .message--feature:nth-of-type(2) {
+    margin-inline-end: 264.44px; }
+  .message--feature:nth-of-type(3) {
+    margin-block-end: 148px; } }
 
 .game-landing--newsletter {
   background-color: black; }
@@ -424,6 +459,13 @@ a {
   margin-block-end: 91.1px;
   width: 290px; }
 
+.newsletter--img {
+  max-width: 100%;
+  width: 423px;
+  height: 523px;
+  object-fit: cover;
+  display: block; }
+
 @media (min-width: 1000px) {
   .container--newsletter {
     max-width: 1114px;
@@ -438,7 +480,11 @@ a {
     padding-block-start: 8px;
     padding-block-end: 8px;
     margin: 0;
-    margin-inline-end: 16px; } }
+    margin-inline-end: 16px; }
+  .newsletter--figure {
+    margin-inline-end: auto; }
+  .newsletter--content {
+    width: 48%; } }
 
 footer {
   background-color: black; }

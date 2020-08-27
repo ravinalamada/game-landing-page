@@ -12,6 +12,14 @@ $black-color: $black;
   text-transform: uppercase;
 }
 
+@mixin Bebas-neue-font {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: $white-color;
+  text-transform: uppercase;
+
+}
+
 @mixin meduim-font {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 18px;
