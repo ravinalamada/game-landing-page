@@ -18,6 +18,12 @@ $black-color: $black;
   color: $white-color;
 }
 
+@mixin max-width-container {
+  max-width: 1114px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
 @mixin normal-white-font {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
