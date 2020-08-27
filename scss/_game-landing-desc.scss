@@ -5,24 +5,42 @@
   background-position: 50%;
 }
 
-.sub_container__description__header {
+.game_landing--description__header {
   padding-block-start: 48.99px;
   padding-inline-start: 13.81px;
   text-align: justify;
   border-bottom: 1px white solid;
 }
 
-.sub_container__description--contents {
+.game_landing--description__heading2 {
+  @include Bebas-neue-font;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.game_landing--description--title {
+  @include Bebas-neue-font;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.game_landing--description--desc {
+  @include normal-white-font;
+}
+
+.game_landing--description--contents {
   padding: 16px;
   text-align: justify;
 }
 
-.image-conatainer {
+.game_landing--description__image--conatainer {
   padding-block-end: 113%;
   padding-block-start: 46px;
 }
 
-.image-list {
+.game_landing--description__list {
   margin: 0;
   padding: 0;
   position: relative;
@@ -30,20 +48,20 @@
   margin-inline-end: 1rem;
 }
 
-.image-items {
+.game_landing--description__image--items {
   position: absolute;
   top: 0;
   transform-origin: 100% 0%;
 }
 
-.image-items:nth-of-type(1) {
+.game_landing--description__image--items:nth-of-type(1) {
   z-index: 3;
   left: 0;
   right: calc(100% * 24 / 249);
   transform: scale(1);
 }
 
-.image-items:nth-of-type(2) {
+.game_landing--description__image--items:nth-of-type(2) {
   z-index: 2;
   width: calc(100% * 213 / 249);
   padding-top: 4%;
@@ -52,7 +70,7 @@
   transform: scale(calc((273 -24) / 296));
 }
 
-.image-items:nth-of-type(3) {
+.game_landing--description__image--items:nth-of-type(3) {
   padding-block-start: calc(100% * 24 / 249);
   padding-left: calc(100% * 24 / 249);
   right: 0;
@@ -67,4 +85,23 @@ img {
   display: block;
 }
 
+@media(min-width:1000px) {
+  .game_landing--description--container {
+    @include max-width-container;
+    display: flex;
+  }
+
+  .game_landing--description--title {
+    margin-block-start: 0;
+  }
+
+  .game_landing--description--sub--container {
+    width: 40%;
+  }
+
+  .game_landing--description__image--conatainer {
+    width: 40%;
+    margin-inline-start: auto;
+  }
+}
 
