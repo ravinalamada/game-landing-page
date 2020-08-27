@@ -5,25 +5,33 @@
   background-position: 50% 50%;
 }
 
-.sub_container--usebility__heading2 {
+.game_landing--requirements__heading2 {
+  @include Bebas-neue-font;
+  font-size: 24px;
   padding-block-start: 65.51px;
+  line-height: 24px;
+  letter-spacing: 2px;
 }
-.sub_container--usebility__links {
+
+.game_landing--requirements__desc {
+  @include Bebas-neue-font;
+  margin-block-start: 0;
+}
+
+.game_landing--requirements__links {
   @include normal-yellow-font;
 }
 
-.sub_container--usebility__list {
+.game_landing--requirements__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // column-gap: 22.17px;
-  // row-gap: 22.17px;
   border: 1px gray solid;
   margin-inline-start: 11px;
   margin-inline-end: 19px;
   padding-inline-start: 0;
 }
 
-.sub_container--usebility__items {
+.game_landing--requirements__items {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -32,24 +40,44 @@
   padding-inline-end: 9px;
 }
 
-.sub_container--usebility__items:nth-of-type(1),
-.sub_container--usebility__items:nth-of-type(3) {
+.game_landing--requirements__items:nth-of-type(1),
+.game_landing--requirements__items:nth-of-type(3) {
   border-inline-end: 1px gray solid;
   padding-inline-end: 10.17px;
 }
 
-.sub_container--usebility__items:nth-of-type(1),
-.sub_container--usebility__items:nth-of-type(2),
-.sub_container--usebility__items:nth-of-type(3),
-.sub_container--usebility__items:nth-of-type(4) {
+.game_landing--requirements__items:nth-of-type(1),
+.game_landing--requirements__items:nth-of-type(2),
+.game_landing--requirements__items:nth-of-type(3),
+.game_landing--requirements__items:nth-of-type(4) {
   border-block-end: 1px gray solid;
   padding-block-end: 9px;
 }
 
-.sub_container--usebility__items:nth-of-type(5) {
+.game_landing--requirements__items:nth-of-type(5) {
   padding-block-end: 9px;
 }
 
-.sub_container--usebility--desc {
+.game_landing--requirements--desc {
   @include normal-white-font;
+}
+
+@media(min-width:1000px) {
+
+  .game_landing--requirements {
+    background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%),
+                      url(../image/desk-bg-requirement.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 80%;
+    background-position: right bottom;
+  }
+
+  .game_landing--requirements--container {
+    @include max-width-container;
+  }
+
+  .game_landing--requirements__list {
+    max-width: 50%;
+    margin-block-end: 172px;
+  }
 }
