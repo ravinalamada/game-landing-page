@@ -20,7 +20,15 @@
   padding-block-start: 40.03px;
 }
 
-.market-desc {
+.game_landing--message__title {
+  @include Bebas-neue-font;
+}
+
+.game_landing--messages--desc {
+  @include normal-white-font;
+}
+
+.game_landing--messages--desc {
   margin-block-start: 40.13px;
   text-align: center;
 }
@@ -34,7 +42,6 @@
 .message--feature__heading3 {
   margin: 0;
 }
-
 
 .message--feature__heading3--prim::before {
   content: url(../image/first-profile.svg);
@@ -90,5 +97,42 @@
   margin-block-end: 46.98px;
 }
 
+@media(min-width:1000px) {
+  .game_landing--messages--container {
+    @include max-width-container;
+    display: flex;
+  }
+
+  .message__header {
+    margin-block-start: 227px;
+  }
+
+  .game_landing--message__title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  .game_landing--messages--desc {
+     width: 65%;
+     text-align: justify;
+     margin-block-end: 75px;
+  }
+
+  .game_landing--messages--read-more {
+    text-align: justify;
+  }
+
+  .message--feature:nth-of-type(1) {
+    margin-block-start: 160px;
+  }
+
+  .message--feature:nth-of-type(2) {
+    margin-inline-end: 264.44px;
+  }
+
+  .message--feature:nth-of-type(3) {
+    margin-block-end: 148px;
+  }
+}
 
 
