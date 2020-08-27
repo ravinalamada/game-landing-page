@@ -36,39 +36,60 @@ main {
   background-size: cover;
   background-position: 50%; }
 
-.sub_container__description__header {
+.game_landing--description__header {
   padding-block-start: 48.99px;
   padding-inline-start: 13.81px;
   text-align: justify;
   border-bottom: 1px white solid; }
 
-.sub_container__description--contents {
+.game_landing--description__heading2 {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px; }
+
+.game_landing--description--title {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+.game_landing--description--desc {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: white; }
+
+.game_landing--description--contents {
   padding: 16px;
   text-align: justify; }
 
-.image-conatainer {
+.game_landing--description__image--conatainer {
   padding-block-end: 113%;
   padding-block-start: 46px; }
 
-.image-list {
+.game_landing--description__list {
   margin: 0;
   padding: 0;
   position: relative;
   margin-inline-start: 1rem;
   margin-inline-end: 1rem; }
 
-.image-items {
+.game_landing--description__image--items {
   position: absolute;
   top: 0;
   transform-origin: 100% 0%; }
 
-.image-items:nth-of-type(1) {
+.game_landing--description__image--items:nth-of-type(1) {
   z-index: 3;
   left: 0;
   right: calc(100% * 24 / 249);
   transform: scale(1); }
 
-.image-items:nth-of-type(2) {
+.game_landing--description__image--items:nth-of-type(2) {
   z-index: 2;
   width: calc(100% * 213 / 249);
   padding-top: 4%;
@@ -76,7 +97,7 @@ main {
   left: calc(100% * 24 / 249);
   transform: scale(calc((273 -24) / 296)); }
 
-.image-items:nth-of-type(3) {
+.game_landing--description__image--items:nth-of-type(3) {
   padding-block-start: calc(100% * 24 / 249);
   padding-left: calc(100% * 24 / 249);
   right: 0;
@@ -89,11 +110,26 @@ img {
   object-fit: cover;
   display: block; }
 
+@media (min-width: 1000px) {
+  .game_landing--description--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    display: flex; }
+  .game_landing--description--title {
+    margin-block-start: 0; }
+  .game_landing--description--sub--container {
+    width: 40%; }
+  .game_landing--description__image--conatainer {
+    width: 40%;
+    margin-inline-start: auto; } }
+
 .title,
 .heading2 {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 18px;
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
 
 .heading2 {
   margin: 0; }
@@ -191,40 +227,75 @@ a {
   background-image: url(../image/desk-bg-desc.png);
   background-repeat: no-repeat; }
 
-.features--container {
+.game_landing--features__heading2 {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px; }
+
+.game_landing--features__desc {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+.game_landing--features--container--contents {
   display: flex;
   flex-direction: row-reverse; }
 
-.feature--figure {
+.game_landing--features--contents {
+  z-index: 2; }
+
+.game_landing--features__figure {
   display: flex;
   flex-direction: column;
   margin-block-end: 0;
   margin-inline-start: 0;
-  margin-inline-end: 0; }
+  margin-inline-end: 0;
+  position: absolute;
+  left: 0; }
 
-.feature--img {
+.game_landing--feature__img {
   max-width: 100%;
   width: 100%;
   height: 100%; }
 
-.sub_container__features__header {
-  padding-block-start: 92.07px; }
+.game_landing--features__header {
+  padding-block-start: 92.07px;
+  text-align: justify; }
 
-.sub_container__features__items {
+.game_landing--features__items {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 21px;
   letter-spacing: 2px;
   color: #FFB548;
   padding-block-start: 43px; }
 
-.sub_container__features__items:nth-of-type(3) {
+.game_landing--features__items:nth-of-type(3) {
   padding-block-end: 151px; }
 
-.sub_container__features__list {
+.game_landing--features__list {
   margin: 0;
   padding-inline-start: 16px;
-  text-align: initial;
+  text-align: justify;
   padding-block-end: 0; }
+
+@media (min-width: 1000px) {
+  .game_landing--features {
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(../image/desk-bg-features.png);
+    background-repeat: no-repeat; }
+  .game_landing--features__figure {
+    display: none; }
+  .game_landing--features--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; }
+  .game_landing--features__desc {
+    margin-block-start: 0; } }
 
 .game_landing--requirements {
   background-image: url(../image/bg-third-art.png);
@@ -232,16 +303,28 @@ a {
   background-size: cover;
   background-position: 50% 50%; }
 
-.sub_container--usebility__heading2 {
-  padding-block-start: 65.51px; }
+.game_landing--requirements__heading2 {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  font-size: 24px;
+  padding-block-start: 65.51px;
+  line-height: 24px;
+  letter-spacing: 2px; }
 
-.sub_container--usebility__links {
+.game_landing--requirements__desc {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  margin-block-start: 0; }
+
+.game_landing--requirements__links {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 21px;
   letter-spacing: 2px;
   color: #FFB548; }
 
-.sub_container--usebility__list {
+.game_landing--requirements__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 1px gray solid;
@@ -249,7 +332,7 @@ a {
   margin-inline-end: 19px;
   padding-inline-start: 0; }
 
-.sub_container--usebility__items {
+.game_landing--requirements__items {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -257,25 +340,39 @@ a {
   padding-inline-start: 9px;
   padding-inline-end: 9px; }
 
-.sub_container--usebility__items:nth-of-type(1),
-.sub_container--usebility__items:nth-of-type(3) {
+.game_landing--requirements__items:nth-of-type(1),
+.game_landing--requirements__items:nth-of-type(3) {
   border-inline-end: 1px gray solid;
   padding-inline-end: 10.17px; }
 
-.sub_container--usebility__items:nth-of-type(1),
-.sub_container--usebility__items:nth-of-type(2),
-.sub_container--usebility__items:nth-of-type(3),
-.sub_container--usebility__items:nth-of-type(4) {
+.game_landing--requirements__items:nth-of-type(1),
+.game_landing--requirements__items:nth-of-type(2),
+.game_landing--requirements__items:nth-of-type(3),
+.game_landing--requirements__items:nth-of-type(4) {
   border-block-end: 1px gray solid;
   padding-block-end: 9px; }
 
-.sub_container--usebility__items:nth-of-type(5) {
+.game_landing--requirements__items:nth-of-type(5) {
   padding-block-end: 9px; }
 
-.sub_container--usebility--desc {
+.game_landing--requirements--desc {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
   color: white; }
+
+@media (min-width: 1000px) {
+  .game_landing--requirements {
+    background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url(../image/desk-bg-requirement.png);
+    background-repeat: no-repeat;
+    background-size: 100%, 80%;
+    background-position: right bottom; }
+  .game_landing--requirements--container {
+    max-width: 1114px;
+    margin-inline-start: auto;
+    margin-inline-end: auto; }
+  .game_landing--requirements__list {
+    max-width: 50%;
+    margin-block-end: 172px; } }
 
 .game_landing--messages {
   background-color: black;
@@ -301,13 +398,18 @@ a {
   text-align: justify; }
 
 .message__heading2 {
+  font-family: 'Bebas Neue',Helvetica, sans-serif;
+  font-size: 80px;
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
   padding-block-start: 40.03px; }
 
 .game_landing--message__title {
   font-family: 'Bebas Neue',Helvetica, sans-serif;
   font-size: 80px;
-  color: white;
-  text-transform: uppercase; }
+  color: white; }
 
 .game_landing--messages--desc {
   font-family: 'Open Sans', Helvetica, sans-serif;
