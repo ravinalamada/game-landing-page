@@ -60,6 +60,14 @@
   width: 290px;
 }
 
+.newsletter--img {
+  max-width: 100%;
+  width: 423px;
+  height: 523px;
+  object-fit: cover;
+  display: block;
+}
+
 @media(min-width:1000px) {
   .container--newsletter {
     @include max-width-container;
@@ -77,5 +85,13 @@
     padding-block-end: 8px;
     margin: 0;
     margin-inline-end: 16px;
+  }
+
+  .newsletter--figure {
+    margin-inline-end: auto;
+  }
+
+  .newsletter--content {
+    width: 48%;
   }
 }
