@@ -16,14 +16,13 @@ $black-color: $black;
   font-family: 'Bebas Neue',Helvetica, sans-serif;
   font-size: 80px;
   color: $white-color;
-  text-transform: uppercase;
-
 }
 
 @mixin meduim-font {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 18px;
   color: $white-color;
+  text-transform: uppercase;
 }
 
 @mixin max-width-container {
