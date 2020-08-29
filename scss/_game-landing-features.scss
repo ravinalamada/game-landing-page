@@ -12,11 +12,49 @@
   letter-spacing: 2px;
 }
 
-.game_landing--features__desc {
+.game_landing--features__header--desc {
   @include Bebas-neue-font;
   line-height: 80px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.game_landing__summary::-webkit-details-marker {
+  display: none;
+}
+
+.game_landing__details {
+  position: relative;
+}
+
+.game_landing__details::before {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid $white;
+  position: absolute;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+.game_landing__details::after {
+  content: '';
+  border: 1px solid $white;
+  height: calc(1rem + 6px);
+  position: absolute;
+}
+
+.game_landing--features--desc {
+  @include normal-white-font;
+  font-size: 18px;
+  text-align: justify;
+  color: $white-color;
+}
+
+.game_landing__details[open] {
+  padding-left: 50%;
 }
 
 .game_landing--features--container--contents {
