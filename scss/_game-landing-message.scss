@@ -26,21 +26,22 @@
 
 .game_landing--message__title {
   @include Bebas-neue-font;
+  margin: 0;
 }
 
 .game_landing--messages--desc {
   @include normal-white-font;
-}
-
-.game_landing--messages--desc {
-  margin-block-start: 40.13px;
-  text-align: center;
+  margin-block-end: 40.13px;
+  text-align: justify;
 }
 
 .message--features {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.game_landing--messages--read-more {
+  text-align: center;
 }
 
 .message--feature__heading3 {
@@ -74,10 +75,6 @@
   padding-inline-end: 16px;
 }
 
-.message--feature {
-  width: 300px
-}
-
 .message--feature:nth-of-type(1) {
   margin-block-start: 30.13px;
 }
@@ -109,6 +106,14 @@
 
   .message__header {
     margin-block-start: 227px;
+  }
+
+  .message--features {
+    align-items: center;
+  }
+
+  .message--feature {
+    width: 300px
   }
 
   .game_landing--message__title {

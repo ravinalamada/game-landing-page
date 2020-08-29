@@ -17,16 +17,46 @@
   text-align: justify;
 }
 
-.masthead-show-more__span {
-  background-image: url(../image/scroll-down.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.masthead-show-more__span::after {
+  content: url(../image/scroll-down.svg);
+          //  url(../image/banners.svg);
+  position: absolute;
+  bottom: -37px;
+  left: 33.8px;
+}
+
+.masthead-show-more::after {
+  content: url(../image/banners.svg);
+  position: absolute;
+  right: 16px;
 }
 
 .market--link {
   @include normal-black-font;
 }
 
-// .masthead--link {
-//   padding-block-end: 269.8px;
-// }
+@media (min-width:1000px) {
+  .masthead {
+    background-image: url(../image/desk-bg-masthead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+  }
+
+  .masthead-show-more::after {
+    content: none;
+  }
+
+  .masthead-show-more__span::after {
+    left: 50%;
+  }
+
+  .masthead--container {
+    @include max-width-container;
+  }
+
+  .masthead-show-more {
+    text-align: center;
+  }
+}
