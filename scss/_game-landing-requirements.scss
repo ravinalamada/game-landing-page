@@ -13,7 +13,7 @@
   letter-spacing: 2px;
 }
 
-.game_landing--requirements__desc {
+.game_landing--requirements--title {
   @include Bebas-neue-font;
   margin-block-start: 0;
 }
@@ -69,11 +69,17 @@
                       url(../image/desk-bg-requirement.png);
     background-repeat: no-repeat;
     background-size: 100%, 80%;
+    background-size: cover;
     background-position: right bottom;
   }
 
   .game_landing--requirements--container {
     @include max-width-container;
+  }
+
+  .game_landing--requirements--title {
+    font-size: 80px;
+    line-height: 80px;
   }
 
   .game_landing--requirements__list {

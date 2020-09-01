@@ -4,19 +4,19 @@
   padding-inline-end: 16px;
 }
 
-.market--link {
+.game_landing--messages--market--link {
   @include normal-black-font;
   font-weight: bold;
 }
-.message--feature-link {
+.game_landing--messages--feature-link {
   @include normal-yellow-font;
 }
 
-.message__header {
+.game_landing--messages__header {
   text-align: justify;
 }
 
-.message__heading2 {
+.game_landing--messages__heading2 {
   @include Bebas-neue-font;
   font-size: 24px;
   line-height: 24px;
@@ -26,16 +26,22 @@
 
 .game_landing--message__title {
   @include Bebas-neue-font;
-  margin: 0;
+  margin-block-start: 24px;
+  margin-block-end: 38px;
 }
 
-.game_landing--messages--desc {
+.game_landing--messages__header--desc {
   @include normal-white-font;
   margin-block-end: 40.13px;
   text-align: justify;
 }
 
-.message--features {
+.game_landing--messages--desc {
+  @include normal-white-font;
+  text-align: justify;
+}
+
+.game_landing--messages--features {
   display: flex;
   flex-direction: column;
 }
@@ -44,29 +50,47 @@
   text-align: center;
 }
 
-.message--feature__heading3 {
+.game_landing--messages--feature__heading3 {
   margin: 0;
 }
 
-.message--feature__heading3--prim::before {
+// .game_landing--messages--feature::before {
+//   content: url(../image/twitter.svg);
+//   position: absolute;
+//   // right: 30px;
+// }
+
+// .game_landing--messages--feature__heading3--sec::after {
+//   content: url(../image/twitter.svg);
+//   position: relative;
+//   right: 16px;
+// }
+
+// .game_landing--messages--feature__heading3--third::after {
+//   content: url(../image/twitter.svg);
+//   position: relative;
+//   right: 16px;
+// }
+
+.game_landing--messages--feature__heading3--prim::before {
   content: url(../image/first-profile.svg);
   position: relative;
   top: 1.5rem;
 }
 
-.message--feature__heading3--sec::before {
+.game_landing--messages--feature__heading3--sec::before {
   content: url(../image/secondary-profile.svg);
   position: relative;
   top: 1.5rem;
 }
 
-.message--feature__heading3--third::before {
+.game_landing--messages--feature__heading3--third::before {
   content: url(../image/third-profile.svg);
   position: relative;
   top: 1.5rem;
 }
 
-.message--feature {
+.game_landing--messages--feature {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   padding-block-end: 16px;
@@ -75,26 +99,26 @@
   padding-inline-end: 16px;
 }
 
-.message--feature:nth-of-type(1) {
+.game_landing--messages--feature:nth-of-type(1) {
   margin-block-start: 30.13px;
 }
 
-.message--feature:nth-of-type(2),
-.message--feature:nth-of-type(3) {
+.game_landing--messages--feature:nth-of-type(2),
+.game_landing--messages--feature:nth-of-type(3) {
   margin-block-start: 20.39px;
 }
 
-.message__span {
+.game_landing--messages__span {
   @include normal-white-font;
   font-size: 12px;
   opacity: 0.5;
 }
 
-.message__span--header {
+.game_landing--messages__span--header {
   padding-inline-start: 46px;
 }
 
-.message--feature:nth-of-type(3) {
+.game_landing--messages--feature:nth-of-type(3) {
   margin-block-end: 46.98px;
 }
 
@@ -104,42 +128,46 @@
     display: flex;
   }
 
-  .message__header {
+  .game_landing--messages__header {
     margin-block-start: 227px;
   }
 
-  .message--features {
-    align-items: center;
+  .game_landing--messages__header--desc {
+    max-width: 79%;
   }
 
-  .message--feature {
+  .game_landing--messages--features {
+    align-items: flex-end;
+  }
+
+  .game_landing--messages--feature {
     width: 300px
   }
 
   .game_landing--message__title {
+    font-size: 80px;
+    line-height: 80px;
     margin-block-start: 0;
     margin-block-end: 0;
   }
 
   .game_landing--messages--desc {
-     width: 65%;
      text-align: justify;
-     margin-block-end: 75px;
   }
 
   .game_landing--messages--read-more {
     text-align: justify;
   }
 
-  .message--feature:nth-of-type(1) {
+  .game_landing--messages--feature:nth-of-type(1) {
     margin-block-start: 160px;
   }
 
-  .message--feature:nth-of-type(2) {
-    margin-inline-end: 264.44px;
+  .game_landing--messages--feature:nth-of-type(2) {
+    margin-inline-end: 107px;
   }
 
-  .message--feature:nth-of-type(3) {
+  .game_landing--messages--feature:nth-of-type(3) {
     margin-block-end: 148px;
   }
 }

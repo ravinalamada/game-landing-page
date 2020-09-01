@@ -1,26 +1,45 @@
 .game-landing--newsletter {
-  background-color: black;
+  background-image: radial-gradient(17.45% 48.77% at 32.45% 42.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
+  background-size: cover;
+  position: relative;
 }
 
-.newsletter--approching {
+.game-landing--newsletter__heading2 {
+  @include Bebas-neue-font;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.game-landing--newsletter--title {
+  @include Bebas-neue-font;
+  margin-block-start: 24px;
+  margin-block-end: 38px;
+}
+
+.game-landing--newsletter--desc {
+  @include normal-white-font;
+}
+
+.game-landing--newsletter--approching {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.newsletter__header {
+.game-landing--newsletter__header {
   text-align: justify;
   display: flex;
   flex-direction: row-reverse;
 }
 
-.newsletter--content {
+.game-landing--newsletter--content {
   margin-block-start: 24px;
   padding-inline-start: 16px;
   padding-inline-end: 16px;
 }
 
-.input-container {
+.game-landing--newsletter__input--container {
   display: flex;
   flex-direction: column;
   background: #ffffff14;
@@ -32,7 +51,7 @@
   width: calc(90% - 16px);
 }
 
-.newsletter__input {
+.game-landing--newsletter__input {
   @include normal-yellow-font;
   font-size: 14px;
   background-color: transparent;
@@ -40,18 +59,24 @@
   border-color: transparent;
 }
 
-.newsletter__label {
+.game-landing--newsletter__label {
   @include normal-white-font;
   font-size: 12px;
   opacity: 0.5;
   text-align: justify;
 }
 
-.newsletter--figure {
-  margin: 0;
-}
+// .game-landing--newsletter__figure {
+//   margin: 0;
+//   width: 50%;
+//   height: 100%;
+//   margin: 0;
+//   position: absolute;
+//   left: 0;
+//   z-index: -1;
+// }
 
-.newsletter__btn {
+.game-landing--newsletter__btn {
   @include normal-black-font;
   font-weight: bold;
   outline: none;
@@ -60,31 +85,36 @@
   width: 90%;
 }
 
-.newsletter--img {
-  max-width: 100%;
-  width: 423px;
-  height: 523px;
-  object-fit: cover;
-  display: block;
-}
+// .game-landing--newsletter__img {
+//   max-width: 100%;
+//   width: 423px;
+//   height: 523px;
+//   object-fit: cover;
+//   display: block;
+// }
 
 @media(min-width:1000px) {
-  .container--newsletter {
+  .game-landing--newsletter--container {
     @include max-width-container;
   }
 
-  .newsletter__header {
+  .game-landing--newsletter--title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .game-landing--newsletter__header {
     margin-block-end: calc(-16px * 7);
   }
 
-  .newsletter--approching {
+  .game-landing--newsletter--approching {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
   }
 
-  .input-container {
+  .game-landing--newsletter__input--container {
     padding-block-start: 8px;
     padding-block-end: 8px;
     margin: 0;
@@ -92,15 +122,15 @@
     width: calc(290px - 16px);
   }
 
-  .newsletter__btn {
+  .game-landing--newsletter__btn {
     width: 200px;
   }
 
-  .newsletter--figure {
+  .game-landing--newsletter__figure {
     margin-inline-end: auto;
   }
 
-  .newsletter--content {
+  .game-landing--newsletter__content {
     margin-block-start: 102px;
     width: 48%;
   }

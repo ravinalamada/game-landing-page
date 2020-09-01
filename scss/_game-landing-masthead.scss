@@ -8,6 +8,18 @@
   background-position: center;
 }
 
+.masthead__heading2 {
+  @include Bebas-neue-font;
+  margin-block-start: 200px;
+}
+
+.masthead--title {
+  @include Bebas-neue-font;
+  font-size: 18px;
+  line-height: 18px;
+  margin-block-end: 39px;
+}
+
 .masthead-show-more {
   @include normal-white-font;
   padding-block-start: 189px;
@@ -19,7 +31,6 @@
 
 .masthead-show-more__span::after {
   content: url(../image/scroll-down.svg);
-          //  url(../image/banners.svg);
   position: absolute;
   bottom: -37px;
   left: 33.8px;
@@ -29,6 +40,10 @@
   content: url(../image/banners.svg);
   position: absolute;
   right: 16px;
+}
+
+.masthead__btn {
+
 }
 
 .market--link {
@@ -42,6 +57,10 @@
     background-size: cover;
     box-sizing: border-box;
     background-position: center;
+  }
+
+  .masthead__heading2 {
+    font-size: 80px;
   }
 
   .masthead-show-more::after {
