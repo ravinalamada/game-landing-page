@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <input type="checkbox" id="menu_checkbox">
+  <input type="checkbox" id="menu_checkbox" class="landing_game__input">
   <header class="landing_game__header">
     <div class="landing_game__header-container">
       <h1 class="landing_game__header__heading1">
@@ -28,26 +28,50 @@
         </a>
       </h1>
       <nav class="landing_game__header__navigation--menu">
-          <ul class=" landing_game__header__list-menu">
-            <li class="landing_game__header__item-main"><a href="" class="landing_game__header__link">Main</a></li>
-            <li class="landing_game__header__item-about"><a href="" class="landing_game__header__link">About</a></li>
-            <li class="landing_game__header__item-feature"><a href="" class="landing_game__header__link">Game features</a></li>
-            <li class="landing_game__header__item-system"><a href="" class="landing_game__header__link">System requirements</a></li>
-            <li class="landing_game__header__item-qoutes"><a href="" class="landing_game__header__link">Qoutes</a></li>
-          </ul>
-        </nav>
+        <h2 class="landing_game__header__heading2">
+          <label for="menu_checkbox" class="icon icon_menu">
+            <span class="landing_game__header--menu">Open the menu</span>
+          </label>
+        </h2>
+        <ul class=" landing_game__header__list-menu">
+          <li class="landing_game__header__item-main"><a href="" class="landing_game__header__link">Main</a></li>
+          <li class="landing_game__header__item-about"><a href="" class="landing_game__header__link">About</a></li>
+          <li class="landing_game__header__item-feature"><a href="" class="landing_game__header__link">Game features</a>
+          </li>
+          <li class="landing_game__header__item-system"><a href="" class="landing_game__header__link">System
+              requirements</a></li>
+          <li class="landing_game__header__item-qoutes"><a href="" class="landing_game__header__link">Qoutes</a></li>
+        </ul>
+      </nav>
       <div class="landing_game__header--dropdown">
-        <label for="landing_game__header--selected--langauge"></label>
-        <select name="dropdown-menu" id="landing_game__header--selected--langauge">
-          <option value="ENG">ENG</option>
-          <option value="RUS">RUS</option>
-          <option value="FRA">FRA</option>
-          <option value="DEU">DEU</option>
-        </select>
+        <form>
+          <label for="landing_game__header--selected--langauge"></label>
+          <select name="dropdown-menu" id="landing_game__header--selected--langauge"
+            class="landing_game__header--selected--langauge">
+            <option value="ENG">ENG</option>
+            <option value="RUS">RUS</option>
+            <option value="FRA">FRA</option>
+            <option value="DEU">DEU</option>
+          </select>
+        </form>
         <p class="landing_game__header--char">|</p>
         <label for="menu_checkbox" class="icon icon_menu">
           <span class="landing_game__header--menu">Open the menu</span>
         </label>
+        <nav class="landing_game__header__nav--icon">
+          <ul class="landing_game__header__list--icon">
+            <li class="landing_game__header__item--icon">
+              <a class="landing_game__header__link--icon landing_game__header__link--icon1" href="/ball-icon1">ball
+                icon1
+              </a>
+            </li>
+            <li class="landing_game__header__item--icon">
+              <a class="landing_game__header__link--icon landing_game__header__link--icon2" href="/ball-icon2">ball
+                icon2
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -57,7 +81,8 @@
         <div class="masthead--contents--wrapper">
           <h2 class="masthead__heading2">Survive at all costs</h2>
           <p class="masthead--title">Exprience new battle royale game</p>
-          <p class="masthead__btn"><a href="/buy-steam" class="market--link masthead--link">Buy now on steam │ $14.99</a></p>
+          <p class="masthead__btn"><a href="/buy-steam" class="market--link masthead--link">Buy now on steam │
+              $14.99</a></p>
           <p class="masthead-show-more"><span class="masthead-show-more__span">The story</span></p>
         </div>
       </div>
@@ -123,7 +148,7 @@
                 </details>
               </li>
               <li class="items game_landing--features__items">
-                <details class="game_landing__details">
+                <details class="game_landing__details game_landing__details--third">
                   <summary class="game_landing__summary">Impress the audience</summary>
                   <p class="game_landing--features--desc">You have 30 minutes to find a relic, signal for extraction,
                     and grab
@@ -185,11 +210,13 @@
         <header class="game_landing--messages__header">
           <h2 class="game_landing--messages__heading2">What people think</h2>
           <p class="game_landing--message__title">Press quotes</p>
-          <p class="game_landing--messages__header--desc">Our goal is to create a product and service that you’re satisfied with
+          <p class="game_landing--messages__header--desc">Our goal is to create a product and service that you’re
+            satisfied with
             and use it every day. This is why
             we’re constantly working on our services to make it better every day and really listen to what our users has
             to say.</p>
-          <p class="game_landing--messages--read-more"><a href="/read-more" class="game_landing--messages--market--link">Read more
+          <p class="game_landing--messages--read-more"><a href="/read-more"
+              class="game_landing--messages--market--link">Read more
               testimonials</a></p>
         </header>
         <section class="game_landing--messages--features">
@@ -236,7 +263,8 @@
           <div class="game-landing--newsletter--content">
             <h2 class="game-landing--newsletter__heading2">Want to stay in touch?</h2>
             <p class="game-landing--newsletter--title">newsletter subcribe</p>
-            <p class="game-landing--newsletter--desc">In order to start receiving our news, all you have to do is enter your email address.
+            <p class="game-landing--newsletter--desc">In order to start receiving our news, all you have to do is enter
+              your email address.
               Everything else will be
               taken care of by us. We will send you emails containing information about game. We don’t spam.
             </p>
