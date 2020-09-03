@@ -29,11 +29,10 @@
   text-align: justify;
 }
 
-.masthead-show-more__span::after {
-  content: url(../image/scroll-down.svg);
-  position: absolute;
-  bottom: -37px;
-  left: 33.8px;
+.masthead-show-more {
+  background-image: url(../image/scroll-down.svg);
+  background-repeat: no-repeat;
+  background-position: 3% 86%;
 }
 
 .masthead-show-more::after {
@@ -42,15 +41,11 @@
   right: 16px;
 }
 
-.masthead__btn {
-
-}
-
 .market--link {
   @include normal-black-font;
 }
 
-@media (min-width:1000px) {
+@media (min-width:1100px) {
   .masthead {
     background-image: url(../image/desk-bg-masthead.png);
     background-repeat: no-repeat;
@@ -61,14 +56,15 @@
 
   .masthead__heading2 {
     font-size: 80px;
+    margin-block-start: 570px;
   }
 
   .masthead-show-more::after {
     content: none;
   }
 
-  .masthead-show-more__span::after {
-    left: 50%;
+  .masthead-show-more {
+    background-position: 50% 86%;
   }
 
   .masthead--container {
