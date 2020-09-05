@@ -5,6 +5,10 @@
   background-position: 50% 50%;
 }
 
+.game_landing--requirements--container {
+  padding-block-end: 50%;
+}
+
 .game_landing--requirements__heading2 {
   @include Bebas-neue-font;
   font-size: 24px;
@@ -71,6 +75,10 @@
     background-size: 100%, 80%;
     background-size: cover;
     background-position: right bottom;
+  }
+
+  .game_landing--requirements--container {
+    padding-block-end: 0;
   }
 
   .game_landing--requirements--container {

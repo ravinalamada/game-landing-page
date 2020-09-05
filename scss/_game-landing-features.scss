@@ -1,8 +1,11 @@
-
+.game_landing--features {
+  background-color: black;
+}
 .game_landing--features--container {
-  background-image: radial-gradient(17.45% 48.77% at 32.45% 42.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%);
-  background-size: cover;
-  background-position-x: -151px;
+  background-image: radial-gradient(33.45% 48.77% at 32.45% 42.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),
+                    url(../image/desk-bg-features--small.png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 .game_landing--features__heading2 {

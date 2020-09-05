@@ -26,15 +26,16 @@ footer {
 }
 
 .game_landing__footer__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 22px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-block-start: 44.75px;
   text-align: justify;
 }
 
-.game_landing__footer__items:nth-of-type(4) {
-  grid-column: 1 / 3;
+.game_landing__footer__items {
+  padding-block-start: 22px;
 }
 
 .icons {
@@ -44,17 +45,23 @@ footer {
 
 .game_landing__footer__list--icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-block-start: 44.75px;
   padding-block-end: 44.75px;
 }
 
 .game_landing__footer__items--icons {
-  width: 70px;
+  width: 25px;
 }
 .game_landing__footer--links--icons--facebook {
   background-image: url(../image/facebook-icon.svg);
   background-repeat: no-repeat;
+}
+
+.game_landing__footer--icons {
+  width: 90%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
 .game_landing__footer--links--icons--twitter {
@@ -90,6 +97,8 @@ footer {
   padding-block-end: 63.58px;
 }
 
+
+
 @media(min-width:1100px) {
   .game_landing__footer--container {
     @include max-width-container;
@@ -116,6 +125,16 @@ footer {
     margin-block-start: -36px;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .game_landing__footer--icons {
+    width: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  .game_landing__footer__list--icons {
+    width: 300px;
   }
 
   .game_landing__footer--rule__list {
